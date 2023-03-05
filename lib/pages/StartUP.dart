@@ -56,20 +56,8 @@ class  _MyStartUp extends State<StartUp> with SingleTickerProviderStateMixin {
               child: SizedBox(
                 height: MediaQuery.of(context).size.height*0.80,
                 width: MediaQuery.of(context).size.width,
-                child:Stack(
-                  clipBehavior: Clip.antiAlias,
-                  children: [
-                    Card(
-                      margin:const EdgeInsets.all(0),
-                      elevation: 0,
-                      color: const Color.fromARGB(255, 250, 241, 211),
-                      shape:const RoundedRectangleBorder( borderRadius: BorderRadius.horizontal(right: Radius.circular(100) ) ),
-                      child: SizedBox(
-                        height: MediaQuery.of(context).size.height*0.20,
-                        width: MediaQuery.of(context).size.width*0.70,
-                      ),
-                    )
-                  ],
+                child:CustomPaint(
+
                 )
               ),
             )
